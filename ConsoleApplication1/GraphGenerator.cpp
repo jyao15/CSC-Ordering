@@ -39,8 +39,16 @@ Graph* GraphGenerator::generate(int mode, int node_number)
 		}
 		for (int j=0;j<in_degree;j++)
 		{
-			std::uniform_real_distribution<double> weight_distribution(min_prob, 2*remain_prob/(in_degree-j));
-			double weight = weight_distribution(generator);
+			double weight;
+			if (2*remain_prob/(in_degree-j) <= min_prob)
+			{
+				weight = std::min(min_prob, remain_prob);
+			}
+			else
+			{
+				std::uniform_real_distribution<double> weight_distribution(min_prob, 2*remain_prob/(in_degree-j));
+				weight = weight_distribution(generator);
+			}
 			if (j == in_degree - 1) weight = remain_prob;
 			graph->in_edges[i][j] = random_elements[j];
 			graph->in_weights[i][j] = weight;

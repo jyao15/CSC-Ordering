@@ -1,6 +1,7 @@
 #pragma once
 class Graph
 {
+public:
 	int node_number;
 	int* in_degrees;
 	int* out_degrees;
@@ -9,10 +10,8 @@ class Graph
 	double* init_probs;
 	double** in_weights;
 	double** out_weights;
-public:
 	Graph(void);
 	~Graph(void);
-	friend class GraphGenerator;
 	void print();
 };
 
