@@ -26,8 +26,8 @@ int* GreedyMaxProb::solve(Graph* graph)
 		{
 			if (current_probs[j] > current_max)
 			{
-				max_index = i;
-				current_max = current_probs[i];
+				max_index = j;
+				current_max = current_probs[j];
 			}
 		}
 		result[i] = max_index;
@@ -35,6 +35,7 @@ int* GreedyMaxProb::solve(Graph* graph)
 		{
 			current_probs[graph->out_edges[max_index][j]] += current_max * graph->out_weights[max_index][j];
 		}
+		current_probs[max_index] = -1;
 	}
 	delete[] current_probs;
 	return(result);

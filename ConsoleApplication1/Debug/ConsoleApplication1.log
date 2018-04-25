@@ -1,25 +1,11 @@
-﻿生成启动时间为 2018/4/25 23:25:40。
+﻿生成启动时间为 2018/4/25 23:42:04。
      1>项目“E:\Lab\THIRD STAGE\computational social choice\experiments\ordering\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.vcxproj”在节点 2 上(Build 个目标)。
      1>InitializeBuildStatus:
          正在创建“Debug\ConsoleApplication1.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
          所有输出均为最新。
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\ConsoleApplication1.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ConsoleApplication1.cpp GraphGenerator.cpp
-         GraphGenerator.cpp
-     1>e:\lab\third stage\computational social choice\experiments\ordering\consoleapplication1\consoleapplication1\graphgenerator.cpp(7): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
-     1>c:\program files (x86)\microsoft visual studio 11.0\vc\include\xutility(2761): warning C4996: 'std::_Fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xutility(2747) : 参见“std::_Fill_n”的声明
-                 e:\lab\third stage\computational social choice\experiments\ordering\consoleapplication1\consoleapplication1\graphgenerator.cpp(12): 参见对正在编译的函数 模板 实例化“_OutIt std::fill_n<int*,int,int>(_OutIt,_Diff,const _Ty &)”的引用
-                 with
-                 [
-                     _OutIt=int *,
-                     _Diff=int,
-                     _Ty=int
-                 ]
-         正在生成代码...
-         正在编译...
-         ConsoleApplication1.cpp
-         正在生成代码...
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\ConsoleApplication1.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt GreedyMaxProb.cpp
+         GreedyMaxProb.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Lab\THIRD STAGE\computational social choice\experiments\ordering\ConsoleApplication1\Debug\ConsoleApplication1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Lab\THIRD STAGE\computational social choice\experiments\ordering\ConsoleApplication1\Debug\ConsoleApplication1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Lab\THIRD STAGE\computational social choice\experiments\ordering\ConsoleApplication1\Debug\ConsoleApplication1.lib" /MACHINE:X86 Debug\ConsoleApplication1.obj
          Debug\Graph.obj
@@ -35,4 +21,4 @@
 
 生成成功。
 
-已用时间 00:00:01.56
+已用时间 00:00:00.45

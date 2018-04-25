@@ -33,6 +33,7 @@ void Graph::print()
 	for (int i=0; i<node_number; i++)
 	{
 		printf("node %d: ", i);
+		printf("init: %f  ", init_probs[i]);
 		for (int j=0; j<in_degrees[i]; j++)
 		{
 			printf("(%d, %f)", in_edges[i][j], in_weights[i][j]);
