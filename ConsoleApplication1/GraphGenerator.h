@@ -1,6 +1,7 @@
 #pragma once
 #include"Graph.h"
 #include<algorithm>
+#include<ctime>
 
 const double min_prob = 0.001;
 const double average_init_prob = 0.15;
